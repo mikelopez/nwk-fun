@@ -1,0 +1,5 @@
+#!/bin/bash
+
+[ -f app.nw ] && rm app.nw
+zip app.nw package.json index.html &&
+$NWPATH/nw app.nw
